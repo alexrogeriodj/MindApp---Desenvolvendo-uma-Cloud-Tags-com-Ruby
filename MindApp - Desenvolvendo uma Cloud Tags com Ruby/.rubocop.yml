@@ -1,0 +1,58 @@
+
+AllCops:
+  Include:
+    - 'lib/**/*'
+  Exclude:
+    - 'samples/**/*'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+
+# I'm using it for control flow
+Style/AndOr:
+  Enabled: false
+
+Style/Blocks:
+  Enabled: false
+
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+Style/FormatString:
+  EnforcedStyle: percent
+
+Style/Lambda:
+  Enabled: false
+  
+# As it's about arrays, see? Arrays should be in square braces.
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    ! '%w': ! '[]'
+
+Style/SpaceBeforeBlockBraces:
+  EnforcedStyle: no_space
+
+# Just better like it this way
+Style/SpaceInsideBlockBraces:
+  EnforcedStyle: no_space
+  SpaceBeforeBlockParameters: false
+
+Style/StructInheritance:
+  Enabled: false
+
+# Some math just looks better this way
+Style/SpaceAroundOperators:
+  Enabled: false
+
+Style/TrailingWhitespace:
+  Enabled: false
+  
+# I'm trying! Trying!
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+# FIXME: maybe this one is not that fair
+Metrics/AbcSize:
+  Max: 20
